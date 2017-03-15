@@ -67,7 +67,7 @@ namespace WindowsFormsApplication1
             Subtotal += otherStuff;
 
             string order = cboSize.Text + " ";
-            foreach (string top in toppings)
+            foreach (string top in toppings) 
             {
                 order += top + ", ";
             }
