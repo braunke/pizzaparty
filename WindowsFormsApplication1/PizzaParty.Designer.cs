@@ -53,6 +53,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTax = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +72,7 @@
             this.cboSize.Location = new System.Drawing.Point(28, 42);
             this.cboSize.Name = "cboSize";
             this.cboSize.Size = new System.Drawing.Size(121, 21);
-            this.cboSize.TabIndex = 1;
+            this.cboSize.TabIndex = 0;
             this.cboSize.Text = "Select a Size";
             // 
             // boxPepperoni
@@ -80,7 +81,7 @@
             this.boxPepperoni.Location = new System.Drawing.Point(6, 19);
             this.boxPepperoni.Name = "boxPepperoni";
             this.boxPepperoni.Size = new System.Drawing.Size(74, 17);
-            this.boxPepperoni.TabIndex = 2;
+            this.boxPepperoni.TabIndex = 0;
             this.boxPepperoni.Text = "Pepperoni";
             this.boxPepperoni.UseVisualStyleBackColor = true;
             // 
@@ -90,7 +91,7 @@
             this.boxSausage.Location = new System.Drawing.Point(6, 42);
             this.boxSausage.Name = "boxSausage";
             this.boxSausage.Size = new System.Drawing.Size(68, 17);
-            this.boxSausage.TabIndex = 3;
+            this.boxSausage.TabIndex = 1;
             this.boxSausage.Text = "Sausage";
             this.boxSausage.UseVisualStyleBackColor = true;
             // 
@@ -100,7 +101,7 @@
             this.boxChicken.Location = new System.Drawing.Point(6, 65);
             this.boxChicken.Name = "boxChicken";
             this.boxChicken.Size = new System.Drawing.Size(65, 17);
-            this.boxChicken.TabIndex = 4;
+            this.boxChicken.TabIndex = 2;
             this.boxChicken.Text = "Chicken";
             this.boxChicken.UseVisualStyleBackColor = true;
             // 
@@ -110,7 +111,7 @@
             this.boxOnions.Location = new System.Drawing.Point(105, 19);
             this.boxOnions.Name = "boxOnions";
             this.boxOnions.Size = new System.Drawing.Size(59, 17);
-            this.boxOnions.TabIndex = 5;
+            this.boxOnions.TabIndex = 3;
             this.boxOnions.Text = "Onions";
             this.boxOnions.UseVisualStyleBackColor = true;
             // 
@@ -120,7 +121,7 @@
             this.boxMushrooms.Location = new System.Drawing.Point(105, 42);
             this.boxMushrooms.Name = "boxMushrooms";
             this.boxMushrooms.Size = new System.Drawing.Size(80, 17);
-            this.boxMushrooms.TabIndex = 6;
+            this.boxMushrooms.TabIndex = 4;
             this.boxMushrooms.Text = "Mushrooms";
             this.boxMushrooms.UseVisualStyleBackColor = true;
             // 
@@ -130,7 +131,7 @@
             this.boxBlackOlives.Location = new System.Drawing.Point(105, 65);
             this.boxBlackOlives.Name = "boxBlackOlives";
             this.boxBlackOlives.Size = new System.Drawing.Size(85, 17);
-            this.boxBlackOlives.TabIndex = 7;
+            this.boxBlackOlives.TabIndex = 5;
             this.boxBlackOlives.Text = "Black Olives";
             this.boxBlackOlives.UseVisualStyleBackColor = true;
             // 
@@ -145,7 +146,7 @@
             this.groupBox1.Location = new System.Drawing.Point(170, 42);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(221, 135);
-            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Toppings $0.50";
             // 
@@ -157,8 +158,8 @@
             this.groupBox2.Controls.Add(this.boxCookie);
             this.groupBox2.Location = new System.Drawing.Point(430, 42);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(210, 135);
-            this.groupBox2.TabIndex = 9;
+            this.groupBox2.Size = new System.Drawing.Size(178, 135);
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Extras $1.50";
             // 
@@ -204,20 +205,20 @@
             // 
             // btnAddOrder
             // 
-            this.btnAddOrder.Location = new System.Drawing.Point(565, 213);
+            this.btnAddOrder.Location = new System.Drawing.Point(417, 213);
             this.btnAddOrder.Name = "btnAddOrder";
             this.btnAddOrder.Size = new System.Drawing.Size(75, 23);
-            this.btnAddOrder.TabIndex = 10;
+            this.btnAddOrder.TabIndex = 3;
             this.btnAddOrder.Text = "Add to Order";
             this.btnAddOrder.UseVisualStyleBackColor = true;
             this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
             // 
             // btnCheckout
             // 
-            this.btnCheckout.Location = new System.Drawing.Point(511, 337);
+            this.btnCheckout.Location = new System.Drawing.Point(417, 252);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(129, 23);
-            this.btnCheckout.TabIndex = 11;
+            this.btnCheckout.TabIndex = 4;
             this.btnCheckout.Text = "Proceed to Checkout";
             this.btnCheckout.UseVisualStyleBackColor = true;
             this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
@@ -239,10 +240,11 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(565, 454);
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.Location = new System.Drawing.Point(417, 438);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 14;
+            this.btnClose.TabIndex = 6;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -297,11 +299,24 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Kayla, Tyler, Heather, Jason";
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(417, 296);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(63, 28);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Clear Order";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // PizzaParty
             // 
+            this.AcceptButton = this.btnAddOrder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 489);
+            this.CancelButton = this.btnClose;
+            this.ClientSize = new System.Drawing.Size(622, 470);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTax);
             this.Controls.Add(this.label4);
@@ -356,6 +371,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTax;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
